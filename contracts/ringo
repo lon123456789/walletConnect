@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+
+contract HelloWorld {
+    string public message;
+    address public owner;
+
+    event MessageUpdated(address indexed updater, string newMessage);
+
+    constructor(string memory initialMessage) {
+        owner = msg.sender;
+        message = initialMessage;
+    }
+
+    function setMessage(string calldata newMessage) external {
+        message = newMessage;
+        emit MessageUpdated(msg.sender, newMessage);
+    }
+
+    function getMessage() external view returns (string memory) {
+        return message;
+    }
+}
