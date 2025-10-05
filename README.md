@@ -1,1 +1,3 @@
 # walletConnect
+Token: 0x9397a9Ba9861056EabB9a9e4E03480Fc0e93980B
+https://basescan.org/address/0x9397a9ba9861056eabb9a9e4e03480fc0e93980b#code
